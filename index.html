@@ -79,6 +79,10 @@
                             <label class="block text-gray-700 mb-1">الاهتمامات العامة:</label>
                             <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
+                        <div>
+                            <label class="block text-gray-700 mb-1">التاريخ:</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
+                        </div>
                     </div>
                 </div>
 
@@ -92,7 +96,7 @@
                             <thead>
                                 <tr class="bg-gray-100">
                                     <th class="border border-gray-300 px-3 py-2 text-right">الجهاز</th>
-                                    <th class="border border-gray-300 px-3 py-2 text-center">✔</th>
+                                    <th class="border border-gray-300 px-3 py-2 text-center">☑</th>
                                     <th class="border border-gray-300 px-3 py-2 text-right">التطبيقات / الألعاب المستخدمة</th>
                                     <th class="border border-gray-300 px-3 py-2 text-right">وقت الاستخدام</th>
                                     <th class="border border-gray-300 px-3 py-2 text-right">ملاحظات إضافية</th>
@@ -108,42 +112,42 @@
                                 </tr>
                                 <tr>
                                     <td class="border border-gray-300 px-3 py-2">جهاز لوحي (تابلت)</td>
-                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
-                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
+                                    <td class="border border-gray-300 px-3 py-2"><input type="text" class="w-full border-none focus:ring-0 p-0"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                 </tr>
                                 <tr>
                                     <td class="border border-gray-300 px-3 py-2">ساعة ذكية</td>
-                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                 </tr>
                                 <tr>
                                     <td class="border border-gray-300 px-3 py-2">كمبيوتر / لابتوب</td>
-                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                 </tr>
                                 <tr>
                                     <td class="border border-gray-300 px-3 py-2">منصة ألعاب (بلايستيشن، إكس بوكس...)</td>
-                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                 </tr>
                                 <tr>
                                     <td class="border border-gray-300 px-3 py-2">تلفاز ذكي</td>
-                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                 </tr>
                                 <tr>
-                                    <td class="border border-gray-300 px-3 py-2">أخرى: (.......................)</td>
-                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2">أخرى: <input type="text" class="w-24 border-none focus:ring-0 p-0"></td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
                                     <td class="border border-gray-300 px-3 py-2"></td>
@@ -161,23 +165,38 @@
                     <div class="space-y-3">
                         <div class="flex items-start gap-2">
                             <input type="checkbox" class="mt-1 h-4 w-4">
-                            <div>مسلسلات الرسوم المتحركة – <input type="text" class="border-b border-gray-300 focus:border-blue-500 outline-none w-32"></div>
+                            <div class="w-full">
+                                <div class="mb-1">مسلسلات الرسوم المتحركة</div>
+                                <input type="text" class="w-full border-b border-gray-300 focus:border-blue-500 outline-none">
+                            </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div>☐</div>
-                            <div>منصات التواصل الاجتماعي – (.......................)</div>
+                            <input type="checkbox" class="mt-1 h-4 w-4">
+                            <div class="w-full">
+                                <div class="mb-1">منصات التواصل الاجتماعي</div>
+                                <input type="text" class="w-full border-b border-gray-300 focus:border-blue-500 outline-none">
+                            </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div>☐</div>
-                            <div>ألعاب الفيديو – (.......................)</div>
+                            <input type="checkbox" class="mt-1 h-4 w-4">
+                            <div class="w-full">
+                                <div class="mb-1">ألعاب الفيديو</div>
+                                <input type="text" class="w-full border-b border-gray-300 focus:border-blue-500 outline-none">
+                            </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div>☐</div>
-                            <div>أدوات الذكاء الاصطناعي – (.......................)</div>
+                            <input type="checkbox" class="mt-1 h-4 w-4">
+                            <div class="w-full">
+                                <div class="mb-1">أدوات الذكاء الاصطناعي</div>
+                                <input type="text" class="w-full border-b border-gray-300 focus:border-blue-500 outline-none">
+                            </div>
                         </div>
                         <div class="flex items-start gap-2">
-                            <div>☐</div>
-                            <div>أخرى: (.........................................)</div>
+                            <input type="checkbox" class="mt-1 h-4 w-4">
+                            <div class="w-full">
+                                <div class="mb-1">أخرى</div>
+                                <input type="text" class="w-full border-b border-gray-300 focus:border-blue-500 outline-none">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,16 +219,16 @@
                             <label class="block text-gray-700 mb-2">هل يتابعها بمفرده أم مع غيره؟</label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
-                                    <input type="radio" name="cartoon_watch" class="h-4 w-4">
+                                    <input type="checkbox" name="cartoon_watch" class="h-4 w-4">
                                     <span class="ml-2">بمفرده</span>
                                 </label>
                                 <label class="inline-flex items-center">
+                                    <input type="checkbox" name="cartoon_watch" class="h-4 w-4">
                                     <span class="ml-2">مع العائلة</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                                 <label class="inline-flex items-center">
+                                    <input type="checkbox" name="cartoon_watch" class="h-4 w-4">
                                     <span class="ml-2">مع أصدقاء</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                             </div>
                         </div>
@@ -218,23 +237,23 @@
                             <label class="block text-gray-700 mb-2">هل يكتفي بالمشاهدة (تلقي) أم ينتج شيئًا بعد المشاهدة (مشاركة)؟</label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
-                                    <span class="ml-2">يشاهد فقط</span>
-                                    <span class="ml-1">☐</span>
+                                    <span class="ml-2">يشاهد</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يتحدث عنها</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يرسم/يقلّد شخصيات</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                             </div>
                         </div>
                         
                         <div>
                             <label class="block text-gray-700 mb-1">تعليقك كمراقب:</label>
-                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
                     </div>
 
@@ -244,19 +263,27 @@
                         
                         <div class="mb-3">
                             <label class="block text-gray-700 mb-1">ما المنصات التي يستخدمها؟</label>
-                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
                         
                         <div class="mb-3">
                             <label class="block text-gray-700 mb-2">هل يتفاعل أم يكتفي بالتصفح؟</label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
-                                    <span class="ml-2">يتصفح فقط</span>
-                                    <span class="ml-1">☐</span>
+                                    <span class="ml-2">يتصفح</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
-                                    <span class="ml-2">يشارك / يعلق / ينشر</span>
-                                    <span class="ml-1">☐</span>
+                                    <span class="ml-2">يعيد مشاركة</span>
+                                    <input type="checkbox" class="h-4 w-4">
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يعلق</span>
+                                    <input type="checkbox" class="h-4 w-4">
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">ينشر</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                             </div>
                         </div>
@@ -266,22 +293,22 @@
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">فردي</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يتواصل مع الأصدقاء</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يشارك في مجموعات</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                             </div>
                         </div>
                         
                         <div>
                             <label class="block text-gray-700 mb-1">ملاحظات وتعليقاتك:</label>
-                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
                     </div>
 
@@ -291,7 +318,7 @@
                         
                         <div class="mb-3">
                             <label class="block text-gray-700 mb-1">ما الألعاب التي يلعبها؟</label>
-                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
                         
                         <div class="mb-3">
@@ -299,11 +326,11 @@
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يشاهد</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يلعب</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                             </div>
                         </div>
@@ -313,15 +340,15 @@
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">بمفرده</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">مع أصدقاء</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">مع غرباء</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="checkbox" class="h-4 w-4">
                                 </label>
                             </div>
                         </div>
@@ -330,19 +357,19 @@
                             <label class="block text-gray-700 mb-2">هل هناك تفاعل صوتي / كتابي؟</label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
+                                    <input type="radio" name="ai_usage" class="h-4 w-4">
                                     <span class="ml-2">نعم</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                                 <label class="inline-flex items-center">
+                                    <input type="radio" name="ai_usage" class="h-4 w-4">
                                     <span class="ml-2">لا</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                             </div>
                         </div>
                         
                         <div>
                             <label class="block text-gray-700 mb-1">ملاحظاتك على التفاعل والسلوك:</label>
-                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
                     </div>
 
@@ -354,12 +381,12 @@
                             <label class="block text-gray-700 mb-2">هل يستخدم أدوات مثل (ChatGPT، توليد الصور، إلخ)؟</label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
+                                    <input type="radio" name="ai_task" class="h-4 w-4">
                                     <span class="ml-2">نعم</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                                 <label class="inline-flex items-center">
+                                    <input type="radio" name="ai_task" class="h-4 w-4">
                                     <span class="ml-2">لا</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                             </div>
                         </div>
@@ -369,11 +396,11 @@
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">نسخ/لصق الجواب فقط</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="radio" name="ai_use" class="h-4 w-4">
                                 </label>
                                 <label class="inline-flex items-center">
                                     <span class="ml-2">يستخدمها كنقطة انطلاق لتفكير أوسع</span>
-                                    <span class="ml-1">☐</span>
+                                    <input type="radio" name="ai_use" class="h-4 w-4">
                                 </label>
                             </div>
                         </div>
@@ -382,19 +409,19 @@
                             <label class="block text-gray-700 mb-2">هل يشارك النتائج مع أحد أو يستخدمها بمفرده؟</label>
                             <div class="flex flex-wrap gap-4">
                                 <label class="inline-flex items-center">
+                                    <input type="radio" name="ai_sharing" class="h-4 w-4">
                                     <span class="ml-2">فردي</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                                 <label class="inline-flex items-center">
+                                    <input type="radio" name="ai_sharing" class="h-4 w-4">
                                     <span class="ml-2">جماعي / يشارك النتائج</span>
-                                    <span class="ml-1">☐</span>
                                 </label>
                             </div>
                         </div>
                         
                         <div>
                             <label class="block text-gray-700 mb-1">ملاحظاتك كمراقب:</label>
-                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                         </div>
                     </div>
                 </div>
@@ -408,22 +435,22 @@
                         <div class="flex flex-wrap gap-4">
                             <label class="inline-flex items-center">
                                 <span class="ml-2">دائمًا</span>
-                                <span class="ml-1">☐</span>
+                                <input type="radio" name="parent_with_kids" class="h-4 w-4 ml-1">
                             </label>
                             <label class="inline-flex items-center">
                                 <span class="ml-2">أحيانًا</span>
-                                <span class="ml-1">☐</span>
+                                <input type="radio" name="parent_with_kids" class="h-4 w-4 ml-1">
                             </label>
                             <label class="inline-flex items-center">
                                 <span class="ml-2">نادرًا</span>
-                                <span class="ml-1">☐</span>
+                                <input type="radio" name="parent_with_kids" class="h-4 w-4 ml-1">
                             </label>
                         </div>
                     </div>
                     
                     <div class="mb-4">
                         <label class="block text-gray-700 mb-1">هل تطرح أسئلة بعد الاستخدام؟ أمثلة على الأسئلة التي طرحتها أو الحوارات:</label>
-                        <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                     </div>
                     
                     <div>
@@ -431,15 +458,15 @@
                         <div class="flex flex-wrap gap-4 mb-2">
                             <label class="inline-flex items-center">
                                 <span class="ml-2">نعم</span>
-                                <span class="ml-1">☐</span>
+                                <input type="radio" name="parent_dis_kids" class="h-4 w-4 ml-1">
                             </label>
                             <label class="inline-flex items-center">
                                 <span class="ml-2">لا</span>
-                                <span class="ml-1">☐</span>
+                                <input type="radio" name="parent_dis_kids" class="h-4 w-4 ml-1">
                             </label>
                         </div>
                         <label class="block text-gray-700 mb-1">مثال:</label>
-                        <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
                     </div>
                 </div>
 
