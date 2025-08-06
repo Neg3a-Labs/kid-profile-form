@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي لطفلي: فهم الواقع مقابل العالم الافتراضي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .section-title {
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        .section-title:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.5rem;
+            height: 1.5rem;
+            background-color: #3b82f6;
+            border-radius: 0.25rem;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                font-size: 14pt;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+            .form-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">الملف الشخصي لطفلي: فهم الواقع مقابل العالم الافتراضي / الخيالي</h1>
+            
+            <div class="flex justify-center mb-8 no-print">
+                <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg flex items-center gap-2 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd" />
+                    </svg>
+                    طباعة النموذج
+                </button>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Child Information Section -->
+                <div class="form-section">
+                    <h2 class="section-title text-xl font-bold mb-4">👤 معلومات الطفل</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 mb-1">الاسم:</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-1">العمر:</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-1">المرحلة الدراسية:</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-1">الاهتمامات العامة:</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Devices Section -->
+                <div class="form-section">
+                    <h2 class="section-title text-xl font-bold mb-4">🖥️ الأجهزة التي يستخدمها الطفل</h2>
+                    <p class="text-gray-600 mb-4">اختر الأجهزة التي يستخدمها الطفل بانتظام، مع توضيح كيف ومتى يستخدم كل منها:</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="border border-gray-300 px-3 py-2 text-right">الجهاز</th>
+                                    <th class="border border-gray-300 px-3 py-2 text-center">✔</th>
+                                    <th class="border border-gray-300 px-3 py-2 text-right">التطبيقات / الألعاب المستخدمة</th>
+                                    <th class="border border-gray-300 px-3 py-2 text-right">وقت الاستخدام</th>
+                                    <th class="border border-gray-300 px-3 py-2 text-right">ملاحظات إضافية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">هاتف محمول</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center"><input type="checkbox" class="h-4 w-4"></td>
+                                    <td class="border border-gray-300 px-3 py-2"><input type="text" class="w-full border-none focus:ring-0 p-0"></td>
+                                    <td class="border border-gray-300 px-3 py-2"><input type="text" class="w-full border-none focus:ring-0 p-0"></td>
+                                    <td class="border border-gray-300 px-3 py-2"><input type="text" class="w-full border-none focus:ring-0 p-0"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">جهاز لوحي (تابلت)</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">ساعة ذكية</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">كمبيوتر / لابتوب</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">منصة ألعاب (بلايستيشن، إكس بوكس...)</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">تلفاز ذكي</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-3 py-2">أخرى: (.......................)</td>
+                                    <td class="border border-gray-300 px-3 py-2 text-center">☐</td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                    <td class="border border-gray-300 px-3 py-2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Technology Exposure Section -->
+                <div class="form-section">
+                    <h2 class="section-title text-xl font-bold mb-4">📱 1. التعرض للتكنولوجيا</h2>
+                    <p class="text-gray-600 mb-4">ما أنواع التكنولوجيا التي يتعرض لها الطفل؟ ضع ✔ بجانب ما ينطبق، ثم حدد التطبيقات أو المحتوى المرتبط بكل نوع:</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1 h-4 w-4">
+                            <div>مسلسلات الرسوم المتحركة – <input type="text" class="border-b border-gray-300 focus:border-blue-500 outline-none w-32"></div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div>☐</div>
+                            <div>منصات التواصل الاجتماعي – (.......................)</div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div>☐</div>
+                            <div>ألعاب الفيديو – (.......................)</div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div>☐</div>
+                            <div>أدوات الذكاء الاصطناعي – (.......................)</div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div>☐</div>
+                            <div>أخرى: (.........................................)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usage Patterns Section -->
+                <div class="form-section">
+                    <h2 class="section-title text-xl font-bold mb-4">🧩 2. تحليل أنماط الاستخدام حسب نوع التكنولوجيا</h2>
+                    <p class="text-gray-600 mb-4">سجّل الملاحظات حول كل نوع من الاستخدام (تلقي مقابل مشاركة، فردي مقابل جماعي):</p>
+                    
+                    <!-- Cartoons Subsection -->
+                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                        <h3 class="font-bold text-lg mb-3 text-blue-600">🎞️ 2.1 مسلسلات الرسوم المتحركة</h3>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-1">أمثلة على المسلسلات أو القنوات:</label>
+                            <input type="text" class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يتابعها بمفرده أم مع غيره؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="cartoon_watch" class="h-4 w-4">
+                                    <span class="ml-2">بمفرده</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">مع العائلة</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">مع أصدقاء</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يكتفي بالمشاهدة (تلقي) أم ينتج شيئًا بعد المشاهدة (مشاركة)؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يشاهد فقط</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يتحدث عنها</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يرسم/يقلّد شخصيات</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-1">تعليقك كمراقب:</label>
+                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Subsection -->
+                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                        <h3 class="font-bold text-lg mb-3 text-blue-600">💬 2.2 منصات التواصل الاجتماعي والدردشة</h3>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-1">ما المنصات التي يستخدمها؟</label>
+                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يتفاعل أم يكتفي بالتصفح؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يتصفح فقط</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يشارك / يعلق / ينشر</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل الاستخدام فردي أم جماعي؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">فردي</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يتواصل مع الأصدقاء</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يشارك في مجموعات</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-1">ملاحظات وتعليقاتك:</label>
+                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        </div>
+                    </div>
+
+                    <!-- Video Games Subsection -->
+                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                        <h3 class="font-bold text-lg mb-3 text-blue-600">🎮 2.3 ألعاب الفيديو</h3>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-1">ما الألعاب التي يلعبها؟</label>
+                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يشاهد الآخرين فقط أم يلعب بنفسه؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يشاهد</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يلعب</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يستخدم الألعاب بشكل فردي أم جماعي؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">بمفرده</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">مع أصدقاء</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">مع غرباء</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل هناك تفاعل صوتي / كتابي؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">نعم</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">لا</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-1">ملاحظاتك على التفاعل والسلوك:</label>
+                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        </div>
+                    </div>
+
+                    <!-- AI Tools Subsection -->
+                    <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                        <h3 class="font-bold text-lg mb-3 text-blue-600">🤖 2.4 أدوات الذكاء الاصطناعي</h3>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يستخدم أدوات مثل (ChatGPT، توليد الصور، إلخ)؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">نعم</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">لا</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يستخدمها لأداء المهام فقط أم يطور بها أفكار؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">نسخ/لصق الجواب فقط</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">يستخدمها كنقطة انطلاق لتفكير أوسع</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="block text-gray-700 mb-2">هل يشارك النتائج مع أحد أو يستخدمها بمفرده؟</label>
+                            <div class="flex flex-wrap gap-4">
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">فردي</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <span class="ml-2">جماعي / يشارك النتائج</span>
+                                    <span class="ml-1">☐</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-1">ملاحظاتك كمراقب:</label>
+                            <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parent Participation Section -->
+                <div class="form-section">
+                    <h2 class="section-title text-xl font-bold mb-4">👨‍👩‍👧‍👦 3. مشاركتك كولي أمر</h2>
+                    
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-2">هل تتواجد أثناء استخدام التكنولوجيا؟</label>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="inline-flex items-center">
+                                <span class="ml-2">دائمًا</span>
+                                <span class="ml-1">☐</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <span class="ml-2">أحيانًا</span>
+                                <span class="ml-1">☐</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <span class="ml-2">نادرًا</span>
+                                <span class="ml-1">☐</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">هل تطرح أسئلة بعد الاستخدام؟ أمثلة على الأسئلة التي طرحتها أو الحوارات:</label>
+                        <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">هل سبق وفتحت نقاشًا بناءً على ما شاهده/لعبه؟</label>
+                        <div class="flex flex-wrap gap-4 mb-2">
+                            <label class="inline-flex items-center">
+                                <span class="ml-2">نعم</span>
+                                <span class="ml-1">☐</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <span class="ml-2">لا</span>
+                                <span class="ml-1">☐</span>
+                            </label>
+                        </div>
+                        <label class="block text-gray-700 mb-1">مثال:</label>
+                        <div class="border-b-2 border-gray-300 pb-1">..............................................</div>
+                    </div>
+                </div>
+
+                <!-- General Notes Section -->
+                <div class="form-section">
+                    <h2 class="section-title text-xl font-bold mb-4">📌 ملاحظات عامة</h2>
+                    <div class="space-y-4">
+                        <textarea class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none h-8 resize-y"></textarea>
+                        <textarea class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none h-8 resize-y"></textarea>
+                        <textarea class="w-full border-b-2 border-gray-300 pb-1 focus:border-blue-500 outline-none h-8 resize-y"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
